@@ -352,3 +352,10 @@ strong {
         transition: 0.7s ease-in-out;
     }
 }
+
+@media screen and (max-width: 420px) {
+    #content-title-2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}

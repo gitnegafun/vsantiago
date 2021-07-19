@@ -189,6 +189,7 @@ nav .logo:hover {
 .content-title {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 40px;
+    line-height: 48px;
     font-weight: 700;
     color: #333;
 }
@@ -381,7 +382,7 @@ strong {
         transition: 0.7s ease-in-out;
     }
     .content-text-2 {
-        width: 30vh;
+        width: 40vh;
         margin: 0 auto;
         transition: 0.7s ease-in-out;
     }
@@ -389,13 +390,13 @@ strong {
 
  @media only screen and (max-width: 420px){
     .image-flow {
-        width: 30vh;
+        width: 40vh;
         margin: 0 auto;
         transition: 0.7s ease-in-out;
     }
 
     .image {
-        width: 30vh;
+        width: 40vh;
         margin: 20px auto;
         transition: 0.7s ease-in-out;
     }
@@ -452,7 +453,7 @@ strong {
      }
 
      .footer-image {
-        width: 60vw;
+        width: 80vw;
         border-radius: 8px;
         margin: 10px 20px;
         transition: 0.5s ease-in-out;

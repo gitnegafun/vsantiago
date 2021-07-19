@@ -301,8 +301,12 @@ nav .logo:hover {
 
   @media only screen and (max-width: 1200px) and (min-width:320px) {
     .content-sections {
-        width: 80vw;
+        width: 90vw;
         grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+
+    .section-1, .section-2, .section-3 {
+        margin: 10px auto;
     }
 
     .hero-box {
