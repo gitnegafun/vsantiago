@@ -1,0 +1,464 @@
+html, body {
+    font-family: 'PT Mono', monospace, 'PT Sans', sans-serif, 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f7f8fa;
+    font-size: 16px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* navbar */
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+}
+.nav-box {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #707070;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+nav .mainMenu li a:hover {
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .openMenu:hover {
+    opacity: 0.7;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+}
+
+.fa-linkedin-in:hover {
+    color: #333;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.fa-behance:hover {
+    color: #333;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.fa-github:hover {
+    color: #333;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+
+nav .logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    margin: 6px;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+nav .logo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 95px;
+        transition: 0.5s ease-in-out;
+    }
+
+    nav .openMenu {
+        display: block;
+        transition: 200ms ease-in-out;
+    }
+
+    nav .closeMenu {
+        cursor: pointer;
+    }
+
+    nav .closeMenu:hover {
+        opacity: 0.7;
+        transition: 200ms ease-in-out;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #000;
+        font-size: 24px;
+    }
+    .icons {
+        cursor: pointer;
+        padding-top: 80px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+/* banner */
+
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("..//resources/images/cachaca-national/cachaca_montagem_capa_com\ cel.png");
+    height: 80%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 100px;
+    transition: 0.7s ease-in-out;
+}
+
+/* content */
+
+.content {
+    width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+}
+
+.content-1 {
+    width: 100%;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: #f7f5ed;
+}
+
+.content-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.content-title {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+}
+
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #808080;
+}
+
+.content-2 {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.content-2-gif {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.gif-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.gif {
+    width: 30vw;
+    margin: 0 20px;
+    justify-content: space-around;
+}
+
+.link {
+    border-style: dotted;
+    border-width: 0 0 1px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.link:hover {
+    color: #000;
+    font-weight: 400;
+}
+
+strong {
+    color: #333;
+}
+
+/* image */
+
+.image-flow {
+    width: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D8D8D8;
+}
+
+.image-website {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px auto;
+}
+
+.image {
+    width: 90vh;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+/* banner-2 */
+
+.banner-2 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("..//resources/images/cachaca-national/cachaça_montagem.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* banner-3 */
+
+.banner-3 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url("..//resources/images/cachaca-national/mobile_aplicado.jpg");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+/* queries */
+
+@media screen and (max-width: 1200px) and (min-width:320px) {
+    .image-flow {
+        width: 80vh;
+        margin: 0 auto;
+        transition: 0.7s ease-in-out;
+    }
+    .banner {
+        height: 50vh;
+        transition: 0.7s ease-in-out;
+    }
+    .image {
+        width: 80vh;
+        transition: 0.7s ease-in-out;
+ }
+}
+
+@media screen and (max-width: 860px) and (min-width: 320px) {
+    .image {
+        width: 50vh;
+        transition: 0.7s ease-in-out;
+    }
+ }
+
+ @media screen and (max-width: 600px) and (min-width: 320px) {
+    .image {
+        width: 40vh;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    .image-flow {
+        width: 70vh;
+        margin: 0 auto;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .image-flow {
+        width: 60vh;
+        margin: 0 auto;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .image-flow {
+        width: 40vh;
+        margin: 0 auto;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .image-flow {
+        width: 30vh;
+        margin: 0 auto;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+/* footer */
+
+.footer-container {
+    margin-top: 100px;
+}
+
+.line {
+   width: 70vw;
+   border-top: 1px solid #eaeaea;
+}
+
+.footer-text {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 300;
+   font-size: 20px;
+   text-align: center;
+   color: #808080;
+}
+
+.footer-box {
+   display: flex;
+   margin: 0 auto;
+   align-content: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.footer-image {
+   width: 35vw;
+   border-radius: 8px;
+   margin: 0 10px;
+   transition: 0.5s ease-in-out;
+}
+
+.footer-image:hover {
+   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+   transform: scale(1.01,1.01);
+}
+
+@media only screen and (max-width:860px) {
+    .content-2-gif {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gif {
+        width: 50vw;
+        margin: 20px 20px;
+    }
+   .footer-box {
+       display: flex;
+       margin: 0 auto;
+       align-content: center;
+       justify-content: center;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+
+    .footer-image {
+       width: 60vw;
+       border-radius: 8px;
+       margin: 10px 20px;
+       transition: 0.5s ease-in-out;
+    }
+}
+
+/* footer 2 */
+
+.footer-2 {
+   display: flex;
+   width: 100%;
+   height: 200px;
+   text-align: center;
+}
+
+.footer-container-2 {
+   align-items: center;
+   display: inline-flex;
+   margin: 0 auto;
+}
+
+.fab {
+   padding: 20px;
+   font-size: 28px;
+   text-align: center;
+   text-decoration: none;
+}
+
+.fab:hover {
+   opacity: 0.7;
+}
+
+.fa-linkedin-in {
+   color: #333;
+   margin: 0 auto;
+ }
+
+ .fa-behance {
+   color: #333;
+   margin: 0 auto;
+ }
+
+ .fa-github {
+   color: #333;
+   margin: 0 auto;
+ }

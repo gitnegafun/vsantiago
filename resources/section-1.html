@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..//resources/section-1.css" href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link rel="icon" type="image/jpg" href="..//resources/images/favicon/favicon.png">
+    <link rel="stylesheet" href="..//resources/font-awesome/all.min.css">
+    <title>V.Santiago website</title>
+</head>
+<body>
+      <!-- hamburger menu -->
+    <nav>
+        <div class="nav-box">
+            <a class="logo" href="..//resources/index.html"><p>V.Santiago</p></a>
+            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <ul class="mainMenu">
+                <li><a href="..//resources/about.html" href="..//resources/about.css">about</a></li>
+                <li><a href="..//resources/index.html" href="..//resources/index.css">work</a></li>
+                <div class="closeMenu"><i class="fa fa-times"></i></div>
+                <span class="icons">
+                    <i class="fab fa-linkedin-in" href="https://www.linkedin.com/in/vanessa-santiago/" target="_blank"></i>
+                    <i class="fab fa-behance" href="https://www.behance.net/vansantiago" target="_blank"></i>
+                    <i class="fab fa-github" href="https://github.com/VanessaSantiago?tab=repositories" target="_blank"></i>
+                </span>
+            </ul>
+        </div>
+        </nav>
+    <script src="..//menu.js"></script>
+
+  <!-- banner -->
+  <div class="banner"></div>
+
+  <!-- content -->
+  <div class="content">
+    <div class="content-box">
+        <p class="content-title">Ultimaker Subscription Service</p>
+        <p class="content-text">Ultimaker, the global leader in desktop 3D printing, launched the enterprise package of Ultimaker software tools that enables professional organizations to scale up the 3D printing usage across their businesses. <br><br>
+        Subscrition Service is the inhouse subscription framework that gives Ultimaker the capability to sell software, service and learning bundles in its ecosystem. The service provides to all Ultimaker products crucial information regarding the user's subscription. <a class="link" href="subscription.ultimaker.com/">subscription.ultimaker.com</a></p>
+        
+        <p class="content-title">The Challenge</p>
+        <p class="content-text">Ultimaker Subscriptions give the users access to a large set of benefits to improve their 3D printing needs such as remote printer management, expert support, verified plugins for in-house software like Cura, e-learning 3D printing courses, inviting co-workers to start using the subscription, among other features. <br><br>
+        The platform had to support end-to-end workflows from storing parts in a globally accessible library to printing them whenever they are needed. The challenge itself was to create and shape a Subscription MVP (Minimum viable product) platform and make it functional across all Ultimaker touch points. <br><br>
+        Important to mention that my team and I, <i>like many other companies</i>, were working from home due to the Coronavirus pandamic and because we are not a fully remote company, the whole situation was completely new to us. So, we were double checking every step of the way through many calls and online meetings to create, decide and answer simple to complex questions, from us and from the stakeholders.</p>
+
+        <p class="content-title">Defining the MVP</p>
+        <p class="content-text"> The whole platform offers 4 types of Subscription: Ultimaker Personal, which is the free offering and the following 3 paid subscriptions: Essentials, Professional and Excellence. All of them tailored to each target whether a start-up or an international enterprise. <br><br>
+        Although the onboarding and activating flow in each subscription was the same, the upgrade and cancellation flow was not. This was something else we had to tackle and constantly test, especially due to the backend technical constrains. The proposed short-term solution by our product owner was to provide the bare minimum features that would be increased and improved along the way. <br><br>
+        After gathering inputs from stakeholders, we identify the following key needs and features for the MVP: <br><br>
+
+        <strong>Goal definition:</strong> Allow customers who subscribed to Ultimaker subscriptions to access a logged in area and take advantage of the subscriptions features. <br><br>
+        <strong>Enterprise software and E-learning:</strong> The possibility to download the Ultimaker Cura Enterprise edition and the ability to go to Ultimaker 3D Printing Academy. <br><br>
+        <strong>Upgrade and Downgrade:</strong> Automated upgrading or downgrading to Professional and Essentials, but customized and manual upgrading to Excellence. <br><br>
+        <strong>Support:</strong> Customers can open tickes through support link inside the subscription dashboards. <br><br>
+
+        I used Miro to do the flows, costumer journeys, brainstorms, card-sorting and wireframes. Here are some boards I did to help us visualize and identify pain points in the Subscription Portal:</p>
+    </div>
+</div>
+
+<div class="content-1">
+    <img class="image-flow" src="..//resources/images/simp/simp-flow.jpg" alt="flow"> <br>
+    <img class="image-flow" src="..//resources/images/simp/simp-flow3.jpg" alt="flow"><br>
+    <img class="image-flow" src="..//resources/images/simp/simp-flow6.jpg" alt="flow">
+</div>
+<br>
+<div class="content-box">
+    <p class="content-title">Working with developers</p>
+    <p class="content-text">I worked closely with 2 developers (one Front-end and one Backend) and 1 Product Owner to develop the designs for the MVP. We were a short-handed team with a big task to handoff, so I decided to create simple and direct designs not to harm the front-end processes. I also used Ultimaker DSM components to quicken the implementation process and to avoid harming the scope. <br><br>
+    Together with the team, I structured my workflow into a few steps that gave us an overview of the site architecture we had to do from wireframes to prototypes. The main tasks I divided as follows:</p>
+</div>
+
+<div class="content-text-2-bigcontainer">
+    <div class="content-text-2-container">
+        <div class="content-text-2">
+            <img class="um-icons" src="..//resources/images/simp/1-challenge.svg" width="48px" alt="challenge">
+            <p> 1. Define the challenge</p>
+
+            <img class="um-icons" src="..//resources/images/simp/2-ideate.svg" width="48px" alt="ideate">
+            <p> 2. Ideate possible scenarios and journeys</p>
+
+            <img class="um-icons" src="..//resources/images/simp/3-testing.svg" width="48px" alt="testing">
+            <p> 3. Test with developers</p>
+
+            <img class="um-icons" src="..//resources/images/simp/4-review.svg" width="48px" alt="review">
+            <p> 4. Review with the team and stakeholders </p>
+
+            <img class="um-icons" src="..//resources/images/simp/5-refine.svg" width="48px" alt="refine">
+            <p> 5. Refine with the team </p>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <p class="content-title">Prototypes</p>
+    <p class="content-text"> When it comes to prototypes, I think they are sometimes underrated, but I am all in favor of doing them if I have time in scope. By doing them right, they can save us endless time we would be spending trying to explain screens and flows throughout boring text documentations. <br><br>
+    Ultimately, I also think they are valuable to show our envisioned designs and technical processes to stakeholders and for internal company presentations. Especially when the vast majority of the company was working remotely. <br><br>
+    The following prototypes are good examples to overall explain how the onboarding, activating and upgrade flow works for users who subscribed to Ultimaker Subscriptions:
+    </p>
+</div>
+
+<div class="content-3-bigcontainer">
+    <div class="content-3">
+        <div class="image-website">
+            <img class="image" src="..//resources/images/simp/Onboarding2.gif" alt="onboarding">
+        </div>
+        <div class="image-website">
+            <img class="image" src="..//resources/images/simp/Activation.gif" alt="activation">
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <p class="content-title">My role</p>
+    <p class="content-text"> <strong>UX/UI Designer and Prototype</strong><br>
+    I created the end-to-end flow including users onboarding until the upgrade and cancelation of the subscription service. I was constantly testing with developers, prototyping, card-sorting, swapping and changing my designs to deliver a suitable MVP in time. <br><br>
+    I used Miro to build the wireframes and explain the flows to our stakeholders, and Sketch combined with Invision Studio for the visual designs and prototypes.</p>
+    <p class="content-text" > I made sure that the designs followed Ultimaker's guideline but I also used this opportunity to change small atoms and few components that would make more sense to be changed because of the different Subscription needs.
+</div>
+
+<div class="image-website-2">
+    <img class="image-2" src="..//resources/images/simp/simp-screens-mockup-2.jpg" alt="dashboard-screens">
+    <img class="image-2" src="..//resources/images/simp/simp-screens-mockup-3.jpg" alt="onboarding-screens">
+</div>
+<br>
+<div class="content-box">
+    <p class="content-title">Results and takeaways</p>
+    <p class="content-text"> Working in a small scrum team having a huge task ahead of us was an extremely steep learning curve. We were, against all odds, able to deliver our work within the scope. <br><br>
+        
+    Some key lessons from this were: <br><br>
+    <strong>Focus on building the MVP:</strong> Aside from our daily work with other Ultimaker products, we still had to create and implement a functional product. So it's crucial to focus on the features that deliver the highest value to the customers. <br><br>
+    <strong>Changing the Waterfall mindset:</strong> I was the only designer in the team and we didn't have enough people to fine-tune or to worry about every design detail, and therefore I sometimes struggled during the process to forget about my expectations as a designer and try to remember the iterations to come. <br><br>
+    <strong>The best experience comes from collaboration:</strong> Being forced to be working completely from home, also forced us to work with many different collaborative tools, increasing our capacity of collaboration across teams. And I saw that happening not only within our team but inside the entire company.</p>
+</div>
+
+<!-- footer -->
+
+<div class="footer-container">
+    <hr class="line">
+    <p class="footer-text">More of my work:</p>
+    <div class="footer-box">
+        <a class="footer-item" href="../resources/section-2.html" href="..//resources/section-2.css">
+            <img class="footer-image" src="..//resources/images/suvinil/suvinil-montado-cel.jpg" alt="mockup-desk">
+        </a>
+        <a class="footer-item" href="..//resources/section-3.html" href="..//resources/section-3.css">
+            <img class="footer-image" src="..//resources/images/cachaca-national/cachaca51-montado-desk.jpg" alt="mockup-desk">   
+        </a>
+    </div>
+</div>
+
+<!-- footer 2 -->
+
+<div class="footer-2">
+    <div class="footer-container-2">
+        <a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/vanessa-santiago/" target="_blank"></a>
+        <a class="fab fa-behance" href="https://www.behance.net/vansantiago" target="_blank"></a>
+        <a class="fab fa-github" href="https://github.com/VanessaSantiago?tab=repositories" target="_blank"></a>
+    </div>
+</div>
+
+</body>
