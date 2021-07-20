@@ -1,0 +1,360 @@
+html, body {
+    font-family: 'PT Mono', monospace, 'PT Sans', sans-serif, 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f7f8fa;
+    font-size: 16px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* navbar */
+
+nav {
+    background-color: #fff;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+    margin: 0;
+    top: 0;
+}
+.nav-box {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #707070;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+nav .mainMenu li a:hover {
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .openMenu:hover {
+    opacity: 0.7;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 2rem;
+    display: none;
+}
+
+.fa-linkedin-in:hover {
+    color: #333;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.fa-behance:hover {
+    color: #333;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.fa-github:hover {
+    color: #333;
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+
+nav .logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    margin: 6px;
+    cursor: pointer;
+}
+
+nav .logo:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        display: none;
+        transition: 0.5s ease-in-out;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 95px;
+        transition: 0.5s ease-in-out;
+    }
+
+    nav .openMenu {
+        display: block;
+        transition: 200ms ease-in-out;
+    }
+
+    nav .closeMenu {
+        cursor: pointer;
+    }
+
+    nav .closeMenu:hover {
+        opacity: 0.7;
+        transition: 200ms ease-in-out;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #000;
+        font-size: 24px;
+    }
+    .icons {
+        cursor: pointer;
+        padding-top: 80px;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+/* content */
+
+.content {
+    width: 100%;
+    margin-top: 180px;
+    display: flex;
+}
+
+.content-2 {
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+
+.content-box {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.content-box-2 {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.content-title {
+    font-family: 'PT Mono', monospace;
+    line-height: 52px;
+    color: #000;
+}
+
+#content-title-1 {
+    font-family: 'PT Mono', monospace;
+    font-size: 45px;
+    line-height: 52px;
+    color: #000;
+}
+
+#content-title-2 {
+    font-family: 'PT Mono', monospace;
+    font-size: 38px;
+    line-height: 60px;
+    color: #333;
+    padding: 40px 0;
+}
+
+.content-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #808080;
+}
+
+.ultimaker {
+    border-style: dotted;
+    border-width: 0 0 1px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.ultimaker:hover {
+    color: #000;
+    font-weight: 400;
+}
+
+.hero-link {
+    text-decoration: none;
+    color: #707070;
+}
+
+.hero-link:hover {
+    color: #000;
+}
+
+strong {
+    color: #000;
+}
+
+/* my picture */
+
+.picture-section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+.my-picture {
+    display: flex;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 80vh;
+}
+
+.picture-sparkle {
+    position: absolute;
+    height: 500px;
+}
+
+.sparkle {
+    position: relative;
+    left: 300px;
+    width: 30vh;
+}
+
+/* footer */
+
+.footer {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.footer-container {
+    align-items: center;
+    display: inline-flex;
+    margin: 0 auto;
+}
+
+.fab {
+    padding: 20px;
+    font-size: 28px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin-in {
+    color: #333;
+    margin: 0 auto;
+  }
+
+  .fa-behance {
+    color: #333;
+    margin: 0 auto;
+  }
+
+  .fa-github {
+    color: #333;
+    margin: 0 auto;
+  }
+
+/* queries */
+
+@media screen and (max-width:1440px) {
+    .sparkle {
+        width: 30vh;
+        left: 250px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .sparkle {
+        width: 30vh;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .sparkle {
+        width: 30vh;
+        left: 50px;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .sparkle {
+        width: 30vh;
+        left: 40px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .my-picture {
+        width: 60vh;
+        transition: 0.7s ease-in-out;
+    }
+
+    .sparkle {
+        width: 30vh;
+        left: 30px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .my-picture {
+        width: 50vh;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .my-picture {
+        width: 40vh;
+        transition: 0.7s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #content-title-2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+}
