@@ -115,7 +115,6 @@ nav .mainMenu li a {
 .dropbtn a:hover {
   background: none;
   color: #000;
-  font-size: 1.5rem;
 }
 }
 
@@ -166,7 +165,6 @@ nav .logo:hover {
       position: absolute;
       top: 40px;
       right: 90px;
-
   }
   nav .openMenu {
       display: block;
@@ -179,8 +177,6 @@ nav .logo:hover {
   nav .mainMenu li a:hover {
       background: none;
       color: #000;
-      font-size: 1.5rem;
-      transition: 0.5s ease-in-out;
   }
 
   .icons {
