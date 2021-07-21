@@ -22,79 +22,133 @@ nav {
     z-index: 1;
     margin: 0;
     top: 0;
-}
-.nav-box {
+  }
+  .nav-box {
     margin: 0 auto;
     display: flex;
     width: 80%;
     justify-content: space-between;
     align-items: center;
-}
-
-nav .mainMenu {
+  }
+  
+  nav .mainMenu {
     display: flex;
     list-style: none;
-}
-
-nav .mainMenu li a {
+  }
+  nav .mainMenu li a {
     display: inline-block;
     padding-right: 40px;
     text-decoration: none;
     color: #707070;
     font-size: 18px;
-    transition: 0.5s ease-in-out;
-}
-nav .mainMenu li a:hover {
-    color: #000;
-    transition: 0.5s ease-in-out;
-}
-
-nav .openMenu {
+  }
+  nav .mainMenu li a:hover {
+    color: #000
+  }
+  nav .openMenu {
     font-size: 2rem;
     margin: 20px;
     display: none;
     cursor: pointer;
-}
-
-nav .openMenu:hover {
-    opacity: 0.7;
-}
-
-nav .mainMenu .closeMenu, .icons i {
+  }
+  nav .mainMenu .closeMenu, .icons i {
     font-size: 2rem;
     display: none;
-}
-
-.fa-linkedin-in:hover {
+    cursor: pointer;
+  }
+  
+  .dropdown .dropbtn {
+  padding: 0;
+  border: none;
+  outline: none;
+  color: #333;
+  background-color: #fff;
+  font-size: 18px;
+  margin: 0;
+  }
+  
+  .dropbtn a {
+  padding-right: 40px;
+  text-decoration: none;
+  color: #707070;
+  }
+  
+  .dropbtn a:hover {
+  text-decoration: none;
+  color: #333;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  max-width: 300px;
+  box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  
+  .dropdown-content a {
+  max-width: 200px;
+  float: none;
+  color: #707070;
+  padding: 12px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+  color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+  
+  @media(max-width: 800px) {
+  nav .mainMenu li a {
+    margin: 24px auto;
+  }
+  
+  .dropbtn a {
+    transition: 0.5s ease-in-out;
+  }
+  
+  .dropbtn a:hover {
+    background: none;
+    color: #000;
+    font-size: 1.5rem;
+  }
+  }
+  
+  
+  .fa-linkedin-in:hover {
     color: #333;
     opacity: 0.7;
-    transition: 0.5s ease-in-out;
-}
-.fa-behance:hover {
+  }
+  .fa-behance:hover {
     color: #333;
     opacity: 0.7;
-    transition: 0.5s ease-in-out;
-}
-.fa-github:hover {
+  }
+  .fa-github:hover {
     color: #333;
     opacity: 0.7;
-    transition: 0.5s ease-in-out;
-}
-
-nav .logo {
+  }
+  
+  nav .logo {
     font-size: 20px;
     text-decoration: none;
     color: #333;
     margin: 6px;
     cursor: pointer;
-}
-
-nav .logo:hover {
+  }
+  
+  nav .logo:hover {
     opacity: 0.7;
     cursor: pointer;
-}
-
-@media(max-width: 800px){
+  }
+  
+  @media(max-width: 800px){
     nav .mainMenu {
         height: 50vh;
         position: fixed;
@@ -106,46 +160,40 @@ nav .logo:hover {
         justify-content: center;
         align-items: center;
         background: #fff;
+        transition: top 700ms ease-in-out;
         display: none;
-        transition: 0.5s ease-in-out;
     }
     nav .mainMenu .closeMenu {
         display: block;
         position: absolute;
-        top: 35px;
-        right: 95px;
-        transition: 0.5s ease-in-out;
+        top: 40px;
+        right: 90px;
+  
     }
-
     nav .openMenu {
         display: block;
-        transition: 200ms ease-in-out;
     }
-
-    nav .closeMenu {
-        cursor: pointer;
+  
+    li a {
+      transition: 0.5s ease-in-out;
     }
-
-    nav .closeMenu:hover {
-        opacity: 0.7;
-        transition: 200ms ease-in-out;
-    }
-
+  
     nav .mainMenu li a:hover {
         background: none;
         color: #000;
-        font-size: 24px;
+        font-size: 1.5rem;
+        transition: 0.5s ease-in-out;
     }
+  
     .icons {
-        cursor: pointer;
         padding-top: 80px;
     }
-
+  
     .icons i {
         display: inline-block;
         padding: 12px;
     }
-}
+  }
 
 /* content */
 
