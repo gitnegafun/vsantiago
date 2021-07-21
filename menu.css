@@ -1,12 +1,12 @@
 html, body {
-  font-family: 'PT Mono', monospace, 'PT Sans', sans-serif, 'Open Sans', sans-serif;
-  color: #333;
-  background-color: #f7f8fa;
-  font-size: 16px;
-  line-height: 36px;
-  margin: 0;
-  padding: 0;
-  height: 100%;
+    font-family: 'PT Mono', monospace, 'PT Sans', sans-serif, 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f7f8fa;
+    font-size: 16px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav .mainMenu li a {
   padding-right: 40px;
   text-decoration: none;
   color: #707070;
-  font-size: 16px;
+  font-size: 18px;
 }
 nav .mainMenu li a:hover {
   color: #000
@@ -61,7 +61,7 @@ border: none;
 outline: none;
 color: #333;
 background-color: #fff;
-font-size: 16px;
+font-size: 18px;
 margin: 0;
 }
 
@@ -115,7 +115,6 @@ nav .mainMenu li a {
 .dropbtn a:hover {
   background: none;
   color: #000;
-  font-size: 1.5rem;
 }
 }
 
@@ -166,7 +165,6 @@ nav .logo:hover {
       position: absolute;
       top: 40px;
       right: 90px;
-
   }
   nav .openMenu {
       display: block;
@@ -179,8 +177,6 @@ nav .logo:hover {
   nav .mainMenu li a:hover {
       background: none;
       color: #000;
-      font-size: 1.5rem;
-      transition: 0.5s ease-in-out;
   }
 
   .icons {
@@ -192,3 +188,16 @@ nav .logo:hover {
       padding: 12px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 

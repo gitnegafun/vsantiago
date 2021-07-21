@@ -5,43 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humburger Menu</title>
     <link rel="stylesheet" href="../vsantiago/menu.css" href="../vsantiago/menu.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous"/>
 </head>
 <body>
   <nav>
-  <div class="nav-box" id="myTopnav">
-      <a class="logo" href="../vsantiago/index.html"><p>V.Santiago</p></a>
-      <div class="openMenu"><i class="fa fa-bars"></i></div>
-      <ul class="mainMenu">
-          <li><a href="../vsantiago/about.html" href="../vsantiago/about.css">about</a></li>
-          <div class="dropdown">
-            <button class="dropbtn"><a href="../vsantiago/index.html" href="../vsantiago/index.css">work <i class="fa fa-caret-down"></i></a></button>
-            <div class="dropdown-content">
-              <a href="../vsantiago/resources/section-1.html" href="/vsantiago/section-1.css">Subscription Portal</a>
-              <a href="../vsantiago/resources/section-2.html" href="/vsantiago/section-2.css">Suvinil</a>
-              <a href="../vsantiago/resources/section-3.html" href="/vsantiago/section-3.css">Cachaça 51</a>
-            </div>
+    <div class="nav-box" id="myTopnav">
+        <a class="logo" href="../vsantiago/index.html"><p>V.Santiago</p></a>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="../vsantiago/about.html" href="../vsantiago/about.css">about</a></li>
+            <div class="dropdown">
+              <button class="dropbtn"><a href="../vsantiago/index.html" href="../vsantiago/index.css">work <i class="fa fa-caret-down"></i></a></button>
+              <div class="dropdown-content">
+                <a href="../vsantiago/section-1.html" href="../vsantiago/section-1.css">Subscription Portal</a>
+                <a href="../vsantiago/section-2.html" href="../vsantiago/section-2.css">Suvinil</a>
+                <a href="../vsantiago/section-3.html" href="../vsantiago/section-3.css">Cachaça 51</a>
+              </div>
 
-          </div>
-          <div class="closeMenu"><i class="fa fa-times"></i></div>
-          <span class="icons">
-              <i class="fab fa-linkedin-in"></i>
-              <i class="fab fa-behance"></i>
-              <i class="fab fa-github"></i>
-          </span>
-      </ul>
-  </div>
-  </nav>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "nav-box") {
-        x.className += " responsive";
-      } else {
-        x.className = "nav-box";
+            </div>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-behance"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul>
+    </div>
+    </nav>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "nav-box") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav-box";
+        }
       }
-    }
-    </script>
-<script src="./vsantiago/menu.js"></script>
+      </script>
+<script src="../vsantiago/menu.js"></script>
 </body>
 </html>
