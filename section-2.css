@@ -453,6 +453,10 @@ strong {
       right: 50px;
     }
 
+    nav .mainMenu {
+      height: 30vh;
+    }
+
     .banner {
       margin-top: 65px;
   }

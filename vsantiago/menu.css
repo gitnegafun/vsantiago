@@ -212,6 +212,10 @@ nav .logo:hover {
     top: 10px;
     right: 50px;
   }
+
+  nav .mainMenu {
+    height: 30vh;
+  }
 }
 
 
