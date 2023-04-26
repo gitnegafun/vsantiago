@@ -247,6 +247,18 @@ nav {
     color: #808080;
 }
 
+.ultimaker {
+    border-style: dotted;
+    border-width: 0 0 1px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.ultimaker:hover {
+    color: #000;
+    font-weight: 400;
+}
+
 .rabobank {
     border-style: dotted;
     border-width: 0 0 1px;
